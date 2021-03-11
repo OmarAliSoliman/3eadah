@@ -56,6 +56,30 @@ img {
   color: #fff;
 }
 
+.path {
+  padding: 96px 0 96px 0;
+  position: relative;
+  text-align: center;
+}
+.path h5 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.path::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(33, 34, 63, 0.7);
+}
+
 .top-header {
   border-bottom: 1px solid #9493933a;
 }
@@ -93,6 +117,9 @@ img {
   color: #38a9e0;
 }
 
+.navbar {
+  background-color: #fff;
+}
 .navbar .navbar-brand img {
   width: 103px;
   max-height: 42px;
@@ -293,7 +320,7 @@ img {
   font-size: 107px;
   opacity: 0.6;
   font-weight: bold;
-  color: #E4E8EF;
+  color: #e4e8ef;
 }
 .about-clinic .about-content .about-content_h5 {
   font-size: 28px;
@@ -311,7 +338,8 @@ img {
   border: 0;
   margin-bottom: 20px;
 }
-.about-clinic .about-content .card .card-title, .about-clinic .about-content .card .card-text {
+.about-clinic .about-content .card .card-title,
+.about-clinic .about-content .card .card-text {
   margin: 0;
 }
 .about-clinic .about-content .card .card-title {
@@ -347,7 +375,7 @@ img {
   font-size: 107px;
   opacity: 0.6;
   font-weight: bold;
-  color: #E4E8EF;
+  color: #e4e8ef;
   margin: 0;
 }
 .majors .major-head h5 {
@@ -359,9 +387,9 @@ img {
   margin: auto;
 }
 .majors .slider-bottom {
-  background-color: #FCFCFE;
+  background-color: #fcfcfe;
   border-radius: 25px;
-  border: 1px solid #D9DFEB;
+  border: 1px solid #d9dfeb;
 }
 .majors .slider-bottom .item-slide:focus {
   outline: 0 !important;
@@ -372,7 +400,7 @@ img {
   text-align: center;
   border: 0;
   background-color: transparent;
-  border-left: 1px solid #DDD;
+  border-left: 1px solid #ddd;
   border-radius: 0;
 }
 .majors .slider-bottom .item-slide .card img {
@@ -432,17 +460,6 @@ img {
   position: relative;
   margin-top: 110px;
 }
-.our-services::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-color: rgba(33, 34, 63, 0.9);
-}
 .our-services .our-serv-header {
   text-align: center;
   margin-bottom: 32px;
@@ -453,7 +470,7 @@ img {
   font-size: 107px;
   opacity: 0.6;
   font-weight: bold;
-  color: #E4E8EF;
+  color: #e4e8ef;
   margin: 0;
 }
 .our-services .our-serv-header h5 {
@@ -465,30 +482,31 @@ img {
   margin: auto;
   color: #fff;
 }
-.our-services .card {
+.our-services .serv-card {
   background-color: rgba(55, 69, 102, 0.2);
   border-radius: 25px;
   text-align: center;
-  padding: 20px;
-  border: 1px solid #D9DFEB;
+  padding: 30px;
+  border: 1px solid #d9dfeb;
   transition: all 0.5s ease;
   margin-bottom: 20px;
 }
-.our-services .card .card-img {
+.our-services .serv-card .card-img {
   height: 100px;
 }
-.our-services .card .card-img img {
+.our-services .serv-card .card-img img {
   width: auto;
   height: auto;
 }
-.our-services .card .card-title {
+.our-services .serv-card .card-title {
   margin-top: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   color: #fff;
   font-size: 20px;
   text-decoration: none;
+  display: inline-block;
 }
-.our-services .card .card-text {
+.our-services .serv-card .card-text {
   font-size: 14px;
   color: #fff;
   line-height: 25px;
@@ -498,7 +516,7 @@ img {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-.our-services .card:hover {
+.our-services .serv-card:hover {
   background-color: #38a9e0;
   border: 1px solid #38a9e0;
 }
@@ -532,7 +550,7 @@ img {
   font-size: 107px;
   opacity: 0.6;
   font-weight: bold;
-  color: #E4E8EF;
+  color: #e4e8ef;
   margin: 0;
 }
 .clinic-team .clinic-header h5 {
@@ -545,17 +563,19 @@ img {
   color: #000;
 }
 .clinic-team .clinic-cards .team-card {
-  border: 0;
   text-align: center;
   margin-bottom: 20px;
 }
 .clinic-team .clinic-cards .team-card .card-img {
   border: 0;
   margin-bottom: 23px;
+  border: 1px solid #ddd;
+  border-radius: 23px;
 }
 .clinic-team .clinic-cards .team-card .card-img img {
   max-height: 304px;
   max-width: 255px;
+  border-radius: 23px;
 }
 .clinic-team .clinic-cards .team-card .card-title {
   font-size: 20px;
@@ -589,7 +609,7 @@ img {
 }
 
 .blogs {
-  background-color: #F5F7FB;
+  background-color: #f5f7fb;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-top: 83px;
@@ -604,7 +624,7 @@ img {
   font-size: 107px;
   opacity: 0.6;
   font-weight: bold;
-  color: #E4E8EF;
+  color: #e4e8ef;
   margin: 0;
 }
 .blogs .blog-header h5 {
@@ -622,6 +642,23 @@ img {
 .blogs .blog-card .card-img img {
   border-radius: 33px;
   margin-bottom: 20px;
+}
+.blogs .blog-card .time {
+  margin-bottom: 16px;
+}
+.blogs .blog-card .time span {
+  font-size: 14px;
+  color: #98a7b5;
+}
+.blogs .blog-card .time span::after {
+  content: "|";
+  margin-right: 5px;
+}
+.blogs .blog-card .time span:last-child {
+  padding-right: 5px;
+}
+.blogs .blog-card .time span:last-child::after {
+  content: "";
 }
 .blogs .blog-card .card-title {
   font-size: 18px;
@@ -716,6 +753,169 @@ img {
   margin: auto;
 }
 
+.blog-details {
+  margin-top: 58px;
+}
+.blog-details .blog-details-content .blog-details-content-header {
+  font-size: 28px;
+  line-height: 35px;
+}
+.blog-details .blog-details-content .date {
+  font-size: 16px;
+}
+.blog-details .blog-details-content .blog-details-content-img {
+  margin-top: 18px;
+}
+.blog-details .blog-details-content .blog-details-content-img img {
+  max-height: 411px;
+  border-radius: 17px;
+}
+.blog-details .blog-details-content .blog-details-content-par {
+  margin-top: 45px;
+}
+.blog-details .blog-details-content .blog-details-content-par p {
+  line-height: 30px;
+  color: #707070;
+  font-size: 16px;
+}
+.blog-details .blog-details-content .gallery {
+  margin-top: 45px;
+}
+.blog-details .blog-details-content .gallery .card-img {
+  height: 175px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.blog-details .blog-details-content .gallery .card-img .overlay {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(237, 102, 99, 0);
+  opacity: 0;
+}
+.blog-details .blog-details-content .gallery .card-img .overlay a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 15px;
+}
+.blog-details .blog-details-content .gallery .card-img:hover .overlay {
+  background-color: rgba(237, 102, 99, 0.8);
+  opacity: 1;
+}
+.blog-details .blog-details-content .words {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  margin-top: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-details .blog-details-content .words ul li {
+  display: inline-block;
+  background-color: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.blog-details .blog-details-content .words ul li a {
+  color: #707070;
+  text-decoration: none;
+}
+.blog-details .blog-details-content .words ul li:hover {
+  background-color: #38a9e0;
+}
+.blog-details .blog-details-content .words ul li:hover a {
+  color: #fff;
+}
+.blog-details .blog-details-content .words .social {
+  text-align: left;
+}
+.blog-details .blog-details-content .words .social a i {
+  width: 29px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 50%;
+  color: #707070;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  margin: 5px;
+  font-size: 13px;
+}
+.blog-details .blog-details-content .words .social a:hover i {
+  background-color: #38a9e0;
+  border: 1px solid #38a9e0;
+  color: #fff;
+}
+.blog-details .blog-details-content .blogs {
+  margin-top: 30px;
+}
+.blog-details .blog-details-content .blogs .can-see {
+  color: #38a9e0;
+  margin-bottom: 20px;
+}
+.blog-details .sidepar .words li {
+  float: right;
+  margin: 10px;
+}
+.blog-details .sidepar .words li a {
+  background-color: #e5e5e5;
+  border-radius: 19px;
+  color: #707070;
+  font-size: 14px;
+  display: inline-block;
+  padding: 10px;
+}
+.blog-details .sidepar .sub .card {
+  background-color: #38a9e0;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 0;
+  margin-top: 60px;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.blog-details .sidepar .sub .card .envelope {
+  position: absolute;
+  max-width: 183px;
+}
+.blog-details .sidepar .sub .card h5 {
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+}
+.blog-details .sidepar .sub .card p {
+  font-size: 14px;
+  color: #fff;
+  z-index: 4;
+}
+.blog-details .sidepar .sub .card form {
+  position: relative;
+  z-index: 4;
+}
+.blog-details .sidepar .sub .card .form-control {
+  border-radius: 22px;
+  height: 50px;
+}
+.blog-details .sidepar .sub .card .btn {
+  border-radius: 20px;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 148px;
+  height: 48px;
+  margin-top: 29px;
+}
+
 footer {
   background-color: #21223f;
   padding-top: 80px;
@@ -808,6 +1008,48 @@ footer .instagram-pic img {
   margin-bottom: 6px;
 }
 
+.about-who-page {
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.subscripe-who-page {
+  margin-top: 150px;
+}
+
+.our-service-page {
+  margin-top: 71;
+  padding-top: 0;
+}
+.our-service-page .serv-card {
+  background-color: #21223f;
+}
+.our-service-page .our-serv-page-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.our-service-page .our-serv-page-header h5 {
+  width: 50%;
+  margin: auto;
+  font-size: 28px;
+  color: #98a7b5;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.clinic-team-in-slider {
+  margin-top: 0;
+}
+
+.footer-an-page {
+  margin-top: 0;
+}
+
+.blogs-page .blogs {
+  margin-top: 0;
+  background-color: transparent;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
     padding-top: 15px;
@@ -840,8 +1082,18 @@ footer .instagram-pic img {
     width: auto !important;
   }
 
-  .subscripe h5, .subscripe p, .subscripe .input-group {
+  .subscripe h5,
+.subscripe p,
+.subscripe .input-group {
     width: 100%;
+  }
+
+  .blog-details .blog-details-content .words ul li {
+    margin-bottom: 5px;
+  }
+
+  .blog-details .blog-details-content .words .social {
+    text-align: right;
   }
 }
 @media (max-width: 524px) {
@@ -858,11 +1110,17 @@ footer .instagram-pic img {
     border-left: 0;
   }
 
-  .majors .major-head h6, .our-services .our-serv-header h6, .clinic-team .clinic-header h6, .blogs .blog-header h6 {
+  .majors .major-head h6,
+.our-services .our-serv-header h6,
+.clinic-team .clinic-header h6,
+.blogs .blog-header h6 {
     font-size: 60px;
   }
 
-  .majors .major-head h5, .our-services .our-serv-header h5, .clinic-team .clinic-header h5, .blogs .blog-header h5 {
+  .majors .major-head h5,
+.our-services .our-serv-header h5,
+.clinic-team .clinic-header h5,
+.blogs .blog-header h5 {
     width: 100%;
   }
 
@@ -882,7 +1140,7 @@ footer .instagram-pic img {
     border-bottom: 1px solid #eee !important;
   }
 }
-.header {
+.path, .header, .blog-details .blog-details-content .gallery .card-img {
   background-size: cover;
   background-position: center;
 }
