@@ -916,6 +916,175 @@ img {
   margin-top: 29px;
 }
 
+.contact-page {
+  margin-top: 70px;
+}
+.contact-page .contact-content h5 {
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+.contact-page .contact-content p {
+  font-size: 14px;
+}
+.contact-page .contact-content .card {
+  position: relative;
+  padding-right: 20px;
+  border-radius: 0;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: 0;
+}
+.contact-page .contact-content .card i {
+  position: absolute;
+  right: 0;
+  color: #38a9e0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.contact-page .contact-content .card p {
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+}
+.contact-page .contact-form {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.contact-page .contact-form .form-control {
+  height: 50px;
+  border-radius: 37px;
+}
+.contact-page .contact-form .form-control::placeholder {
+  font-size: 14px;
+}
+.contact-page .contact-form .form-group-text .form-control {
+  height: 195px;
+}
+.contact-page .contact-form .btn {
+  background-color: #38a9e0;
+  color: #fff;
+  border-radius: 0;
+  border-radius: 24px;
+  width: 135px;
+  height: 48px;
+  margin-top: 30px;
+}
+.contact-page .contact-form .btn:hover {
+  background-color: #fff;
+  border: 1px solid #38a9e0;
+  color: #38a9e0;
+}
+
+.make-appointemnt-page .make-appointemnt-page-form {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border: 0;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.09);
+  border-radius: 20px;
+  margin-top: 50px;
+  padding: 50px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-header {
+  border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-header h5 {
+  color: #525252;
+  font-weight: bold;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body label {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .input-group {
+  border: 1px solid #c5c5c5;
+  border-radius: 23px;
+  padding: 5px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .input-group .form-control {
+  border: 0;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .input-group .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .input-group .form-control::placeholder {
+  font-size: 15px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .input-group .input-group-text {
+  border: 0;
+  background-color: transparent;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .input-group .input-group-text i {
+  color: #38a9e0;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .form-control {
+  border-radius: 37px;
+  height: 50px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .form-group {
+  margin-bottom: 30px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .form-group .copy {
+  color: #38a9e0;
+  font-size: 12px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body textarea {
+  height: 157px;
+  border-radius: 15px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .btn-submit {
+  text-align: center;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .btn-submit .btn {
+  width: 120px;
+  background-color: #38a9e0;
+  color: #fff;
+  border-radius: 25px;
+  margin-top: 31px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .btn-submit .btn:hover {
+  background-color: #fff;
+  color: #38a9e0;
+  border: 1px solid #38a9e0;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .social {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.make-appointemnt-page .make-appointemnt-page-form .card-body .social a i {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  color: #ffff;
+  text-align: center;
+  line-height: 35px;
+}
+.make-appointemnt-page .fa-facebook-f {
+  background-color: #3b5998;
+}
+.make-appointemnt-page .fa-twitter {
+  background-color: #55acee;
+}
+.make-appointemnt-page .fa-instagram {
+  background-color: #6a453b;
+}
+.make-appointemnt-page .fa-google-plus-g {
+  background-color: #dc4e41;
+}
+.make-appointemnt-page .fa-linkedin-in {
+  background-color: #007ab9;
+}
+
 footer {
   background-color: #21223f;
   padding-top: 80px;
@@ -1094,6 +1263,11 @@ footer .instagram-pic img {
 
   .blog-details .blog-details-content .words .social {
     text-align: right;
+  }
+
+  .make-appointemnt-page .make-appointemnt-page-form {
+    width: 100%;
+    padding: 20px;
   }
 }
 @media (max-width: 524px) {
