@@ -143,13 +143,22 @@ img {
   background-color: #38a9e0;
   text-align: center;
   border-radius: 30px;
+  border: 1px solid #38a9e0;
   margin-left: 20px;
+  transition: all 0.5s ease;
 }
 .navbar .navbar-nav .appointment .nav-link {
   color: #fff;
 }
 .navbar .navbar-nav .appointment .nav-link:hover {
   color: #fff;
+}
+.navbar .navbar-nav .appointment:hover {
+  background-color: transparent;
+  border: 1px solid #38a9e0;
+}
+.navbar .navbar-nav .appointment:hover .nav-link {
+  color: #38a9e0;
 }
 
 .sidenav {

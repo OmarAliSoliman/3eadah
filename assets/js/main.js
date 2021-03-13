@@ -48,7 +48,7 @@ $(document).ready(function () {
     });
   }
 
-  if($('.companies-slider').length){
+  if ($(".companies-slider").length) {
     $(".companies-slider").slick({
       dots: true,
       infinite: false,
@@ -63,7 +63,7 @@ $(document).ready(function () {
       autoplaySpeed: 2000,
       arrows: false,
       infinite: true,
-      cssEase: 'linear',
+      cssEase: "linear",
       responsive: [
         {
           breakpoint: 1026,
@@ -94,6 +94,23 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".funcy-box-media").length) {
+    $(".funcy-box-media").fancybox({
+      transitionIn: "none",
+      transitionOut: "none",
+      titlePosition: "over",
+      titleFormat: function (title, currentArray, currentIndex, currentOpts) {
+        return (
+          '<span id="fancybox-title-over">Image ' +
+          (currentIndex + 1) +
+          " / " +
+          currentArray.length +
+          (title.length ? " &nbsp; " + title : "") +
+          "</span>"
+        );
+      },
+    });
+  }
 });
 
 $(function () {
